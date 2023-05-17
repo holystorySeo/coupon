@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>버튼 페이지</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+      }
+
+      .button {
+        padding: 10px 20px;
+        background-color: #ccc;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="button" onclick="handleClick()">사용하기</button>
+    <p>누르면 사용완료로 변하니 행사 당일에만 사용하세요.</p>
+
+    <script>
+      // 클릭 이벤트 핸들러
+      function handleClick() {
+        var button = document.querySelector(".button");
+        button.textContent = "사용완료";
+      }
+    </script>
+  </body>
+</html>
